@@ -40,7 +40,7 @@ body {
     .right {
         width: 35%;
     }
-    }
+}
 
 .centered {
     position: absolute;
@@ -49,7 +49,16 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.centered img {
+.left .centered img {
     width: 400px;
     border-radius: 50%;
+}
+
+.sm_container {
+    margin: 15px;
+    text-align: center;
+}
+.sm_container img {
+    width: 50px;
+    margin: 10px 5%;
 }
