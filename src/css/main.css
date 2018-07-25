@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+}
+.container {
+    display:block;
+    position: relative;
+    width: 100%;
+    height: 85%;
+}
+.split {
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    color: white;
+}
+.left {
+    background-image: url('../res/blurred.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    width: 65%;
+}
+.right {
+    background-color: rgb(61, 61, 61);
+    width: 35%;
+}
+.centered {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.centered img {
+    width: 400px;
+    border-radius: 50%;
+}
