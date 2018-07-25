@@ -3,3 +3,25 @@ body {
     font-family: sans-serif;
     color: red;
 }
+.container {
+    display:block;
+    height:70%;
+    width:fit-content;
+    position: relative;
+    width: 100%;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+}
+.left {
+    left: 0;
+    border: 2px red solid;
+}
+.right {
+    right: 0;
+    border: 2px blue solid;
+}
