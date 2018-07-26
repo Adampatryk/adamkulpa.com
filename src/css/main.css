@@ -1,6 +1,15 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular-webfont.woff') format('woff');
+}
+@font-face{
+    font-family: 'Roboto Thin';
+    src: url('fonts/Roboto-Thin-webfont.woff') format('woff');
+}
+
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-weight: 50;
 }
 .container {
@@ -62,7 +71,7 @@ body {
     margin: 0 3%;
 }
 .sm_container img {
-    width: 40px;
+    width: 30px;
     filter: brightness(0) invert(1);
     transition: filter 0.1s;
 }
