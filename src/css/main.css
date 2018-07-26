@@ -59,6 +59,12 @@ body {
     text-align: center;
 }
 .sm_container img {
-    width: 50px;
-    margin: 10px 5%;
+    width: 40px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.1s;
+    
+}
+.sm_container img:hover {
+    filter: none;
+    background-color: white;
 }
