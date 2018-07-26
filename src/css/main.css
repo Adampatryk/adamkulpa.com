@@ -10,14 +10,35 @@
 body {
     margin: 0;
     font-family: 'Roboto Thin', sans-serif;
-    font-weight: 50;
 }
+
+.title {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 70%;
+    margin: 0 10px;
+    text-align: center; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
 .container {
     display:block;
     position: relative;
     width: 100%;
-    height: 85%;
+    height: 130vw;
 }
+
+/* This is to stop container height from resizing when screen is smaller than 350px */
+@media only screen and (max-width: 350px){
+    .container {
+        height: 46%;   
+    }
+}
+
 .split {
     height: 100%;
     position: relative;
@@ -30,37 +51,32 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    font-size: 2.5em;
-    text-transform: uppercase;
     width: 100%;
+    text-transform: uppercase;
 }
 .right {
     background-color: rgb(61, 61, 61);
     width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
-    .container {
-        height: 85%;
-    }
-    .left {
-        width: 65%;
-    }
-    .right {
-        width: 35%;
-    }
-}
-
 .centered {
     position: absolute;
-    top:50%;
+    top:48%;
+    width: 100%;
     left:50%;
+    height: 60%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 .left .centered img {
-    width: 400px;
+    height: 90%;
     border-radius: 50%;
+}
+.left .centered p {
+    font-family: 'Roboto Thin';
+    font-size: 2.7em;
+    margin-top: 6%;
+    color: rgb(226, 226, 226);
 }
 
 .sm_container {
@@ -78,4 +94,20 @@ body {
 .sm_container img:hover {
     filter: none;
     background-color: white;
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        height: 85%;
+    }
+    .left {
+        width: 60%;
+    }
+    .left .centered p {
+        margin-top: 40px;
+        font-size: 4em;
+    }
+    .right {
+        width: 40%;
+    }
 }
