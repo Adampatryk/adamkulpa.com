@@ -26,7 +26,9 @@ body {
 }
 
 .container {
-    display:block;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 130vw;
@@ -43,7 +45,6 @@ body {
     height: 100%;
     position: relative;
     box-sizing: border-box;
-    float: left;
     color: white;
 }
 .left {
@@ -55,8 +56,57 @@ body {
     text-transform: uppercase;
 }
 .right {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(63, 63, 63);
     width: 100%;
+    clear: both;
+}
+.nav-button {
+    width: 40px;
+}
+#nav-bar {
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    display:inline-block;
+    clear: both;
+}
+
+#nav-bar a:first-child{
+    background-color: transparent;
+}
+
+#nav-bar.hidden a:not(:first-child) {
+    display: none;
+}
+
+#nav-bar a {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-decoration: none;
+    padding: 10 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+}
+
+#nav-bar a:not(:first-child) {
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s ;
+}
+
+#nav-bar a:not(:first-child):hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
 }
 
 .centered {
@@ -80,11 +130,17 @@ body {
 }
 
 .sm_container {
-    margin: 15px;
+    position: absolute;
+    bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 .sm_container a {
+    position: relative;
+    display: inline-block;
     margin: 0 3%;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .sm_container img {
     width: 30px;
@@ -95,6 +151,7 @@ body {
     filter: none;
     background-color: white;
 }
+
 
 @media only screen and (min-width: 800px) {
     .container {
@@ -109,5 +166,18 @@ body {
     }
     .right {
         width: 40%;
+    }
+    #nav-bar {
+        order: 1;
+    }
+    #nav-bar a:first-child, .nav-button {
+        display: none;
+    }
+    #nav-bar a:not(:first-child), #nav-bar.hidden a:not(:first-child) {
+        display: inline-block;
+        width: initial;
+        padding: 10px 0;
+        width: 20%;
+        margin: 0 10px;
     }
 }
