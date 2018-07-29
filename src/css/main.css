@@ -31,7 +31,7 @@ body {
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    height: 130vw;
+    height: 220vw;
 }
 
 /* This is to stop container height from resizing when screen is smaller than 350px */
@@ -42,7 +42,6 @@ body {
 }
 
 .split {
-    height: 100%;
     position: relative;
     box-sizing: border-box;
     color: white;
@@ -56,19 +55,24 @@ body {
     text-transform: uppercase;
 }
 .right {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(37, 37, 37);
+    top: -1px;
     width: 100%;
-    clear: both;
+    display: block;
 }
 .nav-button {
     width: 40px;
 }
 #nav-bar {
-    width: 100%;
+    width: 101%;
     background-color: rgb(20, 20, 20);
     text-align: center;
-    display:inline-block;
-    clear: both;
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+    z-index: 2;
+    outline: none;
+    left:-1px;
 }
 
 #nav-bar a:first-child{
@@ -76,7 +80,8 @@ body {
 }
 
 #nav-bar.hidden a:not(:first-child) {
-    display: none;
+    height: 0;
+    padding: 0;
 }
 
 #nav-bar a {
@@ -101,6 +106,7 @@ body {
     color: white;
     text-transform: uppercase;
     transition: color 0.3s, background-color 0.3s ;
+    transition: height 0.2s ease-in-out, padding 0.2s ease-in-out;
 }
 
 #nav-bar a:not(:first-child):hover {
@@ -140,6 +146,7 @@ body {
     display: inline-block;
     margin: 0 3%;
     text-decoration: none;
+    outline: none;
     -webkit-tap-highlight-color: transparent;
 }
 .sm_container img {
@@ -157,6 +164,9 @@ body {
     .container {
         height: 85%;
     }
+    .split {
+        height: 94%;
+    }
     .left {
         width: 60%;
     }
@@ -166,9 +176,12 @@ body {
     }
     .right {
         width: 40%;
+        top: 0;
     }
     #nav-bar {
         order: 1;
+        position: relative;
+        height: 6%
     }
     #nav-bar a:first-child, .nav-button {
         display: none;
@@ -179,5 +192,6 @@ body {
         padding: 10px 0;
         width: 20%;
         margin: 0 10px;
+        height: initial;
     }
 }
