@@ -28,7 +28,7 @@
 			</div>
 
 			<div id="nav-bar" class="hidden">
-				<a href="javascript:toggleNav();"><img  class="nav-button" src="res/download.png" alt="nav-button"></a>
+				<a href="javascript:toggleNav();"><div id="nav-button" style="background-image: url(res/nav-button.svg)"></div></a>
 				<a href="#">projects</a>
 				<a href="#">accomplishments</a>
 				<a href="#">impossible list</a>
@@ -116,12 +116,18 @@
 
 		<script>
 			function toggleNav(){
+				var nav_button = document.getElementById('nav-button');
 				var nav = document.getElementById('nav-bar');
+
 				if (nav.className==='hidden'){
 					nav.classList.remove('hidden');
+					nav_button.classList.add('open');
+					nav_button.classList.remove('close');
 				}
 				else{
+					nav_button.classList.add('close');
 					nav.classList.add('hidden');
+					nav_button.classList.remove('open');
 				}
 			}
 		</script>

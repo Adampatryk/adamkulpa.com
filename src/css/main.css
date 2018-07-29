@@ -89,17 +89,46 @@ body {
     line-height: 30px;
     height: 30px;
     text-decoration: none;
+    font-weight: bold;
     padding: 10 0px;
     -webkit-tap-highlight-color: transparent;
     display: block;
 }
 
-.nav-button {
+#nav-button {
     position: absolute;
     display: block;
-    height: 30px;
-    width: 30px;
-    right: 10px;
+    right: 17px;
+    
+    animation-duration: 500ms;
+    animation-timing-function: steps(34);
+    animation-fill-mode: forwards;
+    width: 24px;
+    height: 24px;
+    transform: scale(2);
+    background-repeat: no-repeat;
+}
+@keyframes openNav {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -816px 0px;
+    }
+}
+@keyframes closeNav {
+    0% {
+        background-position: -816px 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+#nav-button.open {
+    animation-name: openNav;
+} 
+#nav-button.close {
+    animation-name: closeNav;
 }
 
 #nav-bar a:not(:first-child) {
