@@ -65,25 +65,23 @@ body {
 }
 #nav-bar {
     width: 101%;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
     text-align: center;
     position: fixed;
-    bottom: 0;
     height: fit-content;
+    min-height: fit-content;
     z-index: 2;
     outline: none;
-    left:-1px;
+    right: 0;
+    bottom: 0;
+    transition: right 0.3s, bottom 0.3s, width 0.3s, height 0.3s, border-radius 0.1s;
 }
 
-#nav-bar a:first-child{
-    background-color: transparent;
-}
-
-#nav-bar.hidden a:not(:first-child) {
+#nav-bar.hidden a:not(:last-child) {
     height: 0;
     padding: 0;
+    overflow: hidden;
 }
-
 #nav-bar a {
     width: 100%;
     line-height: 30px;
@@ -94,11 +92,19 @@ body {
     -webkit-tap-highlight-color: transparent;
     display: block;
 }
+#nav-bar.hidden {
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    right: 10px;
+    bottom: 10px;
+}
 
 #nav-button {
     position: absolute;
     display: block;
-    right: 17px;
+    right: 18px;
+    bottom: 18px;
     
     animation-duration: 500ms;
     animation-timing-function: steps(34);
@@ -131,14 +137,14 @@ body {
     animation-name: closeNav;
 }
 
-#nav-bar a:not(:first-child) {
+#nav-bar a:not(:last-child) {
     color: white;
     text-transform: uppercase;
     transition: color 0.3s, background-color 0.3s ;
     transition: height 0.2s ease-in-out, padding 0.2s ease-in-out;
 }
 
-#nav-bar a:not(:first-child):hover {
+#nav-bar a:not(:last-child):hover {
     color: black;
     background-color: white;
     font-weight: bold;
@@ -207,15 +213,21 @@ body {
         width: 40%;
         top: 0;
     }
-    #nav-bar {
+    #nav-bar,  #nav-bar.hidden {
         order: 1;
         position: relative;
-        height: 6%
+        height: 6%;
+        border-radius: 0;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        transition: none;
+        min-height: unset;
     }
-    #nav-bar a:first-child, .nav-button {
+    #nav-bar a:last-child, .nav-button {
         display: none;
     }
-    #nav-bar a:not(:first-child), #nav-bar.hidden a:not(:first-child) {
+    #nav-bar a:not(:last-child), #nav-bar.hidden a:not(:last-child) {
         display: inline-block;
         width: initial;
         padding: 10px 0;
