@@ -1,136 +1,65 @@
 <html>
 	<head>
-		<title>Adam Kulpa | Portfolio</title>
-		<link rel="shortcut icon" type="image/png" href="res/temp_logo2.png"/>
-		<link rel="stylesheet" href="css/main.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Adam Kulpa</title>
+		<link type="text/css" rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div class='container'>
-			<div class='split left'>
-				
-				<h1 class='title'>
-					<div>p</div>
-					<div>o</div>
-					<div>r</div>
-					<div>t</div>
-					<div>f</div>
-					<div>o</div>
-					<div>l</div>
-					<div>i</div>
-					<div>o</div>
-				</h1>
-				<div class='centered'>
-					<img src="res/me.jpeg" alt="Picture of me">
-					<p>adam kulpa</p>
-				</div>
-				
-			</div>
-
-			<div id="nav-bar" class="hidden">
-				<a href="#">projects</a>
-				<a href="#">accomplishments</a>
-				<a href="#">impossible list</a>
-				<a href="#">contact</a>
-				<a href="javascript:toggleNav();"><div id="nav-button" style="background-image: url(res/nav-button.svg)"></div></a>
-			</div>
-			<div class='split right'>
-				<div class="sm_container">
-					<a href="https://www.facebook.com/adamkulpa16"><img src="res/social_media/facebook_icon.png" alt="Facebook Logo/Link"></a>
-					<a href="https://www.instagram.com/adamkulpa/?hl=en"><img src="res/social_media/instagram_icon.png" alt="Instagram Logo/Link"></a>
-					<a href="https://www.linkedin.com/in/adam-k-3571b6130/"><img src="res/social_media/linkedin_icon.png" alt="LinkedIn Logo/Link"></a>
-					<a href="https://github.com/Adampatryk"><img src="res/social_media/github_icon.png" alt="GitHub Logo/Link"></a>
-				</div>
-			</div>
-		</div>
-		
-		<p>This one</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-		<p>More Content!</p>
-
-		<script>
-			function toggleNav(){
-				var nav_button = document.getElementById('nav-button');
-				var nav = document.getElementById('nav-bar');
-
-				if (nav.className==='hidden'){
-					nav.classList.remove('hidden');
-					nav_button.classList.add('open');
-					nav_button.classList.remove('close');
-				}
-				else{
-					nav_button.classList.add('close');
-					nav.classList.add('hidden');
-					nav_button.classList.remove('open');
-				}
-			}
-		</script>
-
+		<svg id="anim-container" width="100%" height="100%">
+		</svg>
+		<h1 id="landing-title">freelance <br> web developer</h1>
 	</body>
+	<script>
+
+		window.onload = function() {
+			var t = document.getElementById('landing-title');
+			t.style.opacity = '1';
+			t.style.top = '30%';
+		};
+
+		var svgNS = "http://www.w3.org/2000/svg";
+		var svg = document.getElementById("anim-container");
+
+		var rectNum = 7;
+		var newRect;
+		var x, y, rx, ry, width, height, style;
+
+		for (var i = 0; i < rectNum; i++){
+			newRect = document.createElementNS(svgNS, "rect");
+
+			x = (Math.random()-0.7)*200;
+			y = (i*100/rectNum) + "%";
+			width = Math.floor(Math.random() * 50 + 10);
+			height = width*2;
+			rx = Math.floor(width/3);
+			ry = rx;
+			time = 30 * Math.random() + 20;
+
+			newRect.setAttributeNS(null, "y", y);
+			newRect.setAttributeNS(null, "x", "-100%");
+			newRect.setAttributeNS(null, "rx", rx);
+			newRect.setAttributeNS(null, "ry", ry);
+			newRect.setAttributeNS(null, "width", width + "%");
+			newRect.setAttributeNS(null, "height", height);
+			newRect.setAttributeNS(null, "style", "fill:rgb(10,10,"+(15+20*Math.random())+");");
+
+			var initialAnimation = document.createElementNS(svgNS, "animate");
+			initialAnimation.setAttributeNS(null, "attributeName", "x");
+			initialAnimation.setAttributeNS(null, "id", "initanim" + i);
+			initialAnimation.setAttributeNS(null, "from", x + "%");
+			initialAnimation.setAttributeNS(null, "to", "100%");
+			initialAnimation.setAttributeNS(null, "dur", time);
+
+			var animation = document.createElementNS(svgNS, "animate");
+			animation.setAttributeNS(null, "attributeName", "x");
+			animation.setAttributeNS(null, "from", -width+"%");
+			animation.setAttributeNS(null, "to", "100%");
+			animation.setAttributeNS(null, "begin", "initanim" + i + ".end");
+			animation.setAttributeNS(null, "repeatCount", "indefinite");
+			animation.setAttributeNS(null, "dur", time);
+			
+			newRect.appendChild(initialAnimation);
+			newRect.appendChild(animation);
+			svg.appendChild(newRect);	
+		}
+	</script>
 </html>
