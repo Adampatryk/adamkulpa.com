@@ -43,7 +43,16 @@ html, body {
     text-transform: capitalize;
     font-size: 4em;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: opacity 1s, transform 1s;
 }
+
+.content-box .content-title.inview {
+    opacity: 1;
+    transform: initial;
+}
+
 .content-box + .odd {
     background-color: rgb(0, 0, 15);
     color: rgb(241, 240, 255);

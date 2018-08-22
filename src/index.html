@@ -14,7 +14,7 @@
 		<svg id="anim-container">
 		</svg>
 		<h1 id="landing-title" class="reveal">freelance <br> web developer</h1>
-		 <div class="wrapper">
+		 <div id="wrapper">
 			<div class="content-box">
 				<h2 class="content-title">responsive design</h2>
 			</div>
@@ -31,10 +31,46 @@
 	</body>
 	<script>
 		var title = document.getElementById("landing-title");
-		window.setTimeout(function () {
-			document.onscroll = function() {
+
+		function parallax() {
 			title.style.top = 30 + window.pageYOffset/50 + "%";
-		}}, 2000);
+			requestAnimationFrame(parallax);
+		}
+
+		function inView (el) {
+			// var sb = document.getElementsByClassName("content-box")[0].getBoundingClientRect();
+			var eb = el.getBoundingClientRect();
+			return !(eb.y < 0);
+		}
+		function checkVisible(elm) {
+			var rect = elm.getBoundingClientRect();
+			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+			return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+		}
+
+		function updateInView() {
+			for (x of document.getElementsByClassName("content-title")) {
+				if (checkVisible(x)) {
+					x.classList.add("inview");
+				}
+				// else {
+				// 	x.classList.remove("inview");
+				// }
+			}	
+		}
+
+		function onscrollEvents() {
+			updateInView();
+			parallax();
+		}
+		
+		document.onscroll = updateInView;
+		updateInView();
+		
+		window.setTimeout(function () {
+			document.onscroll = onscrollEvents;
+		}, 2000);
+
 		window.setTimeout(function () {title.classList.remove("reveal")}, 1500);
 		
 
