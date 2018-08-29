@@ -17,7 +17,6 @@
 		 <div id="wrapper">
 			<div class="content-box">
 				<h2 class="content-title">responsive design</h2>
-				<p>Nile Ions</p>
 			</div>
 			<div class="content-box odd">
 				<h2 class="content-title">secure websites</h2>
@@ -32,11 +31,6 @@
 	</body>
 	<script>
 		var title = document.getElementById("landing-title");
-
-		function parallax() {
-			title.style.top = 30 + window.pageYOffset/50 + "%";
-			requestAnimationFrame(parallax);
-		}
 
 		function inView (el) {
 			// var sb = document.getElementsByClassName("content-box")[0].getBoundingClientRect();
@@ -59,21 +53,9 @@
 				// }
 			}	
 		}
-
-		function onscrollEvents() {
-			updateInView();
-			parallax();
-		}
 		
 		document.onscroll = updateInView;
 		updateInView();
-		
-		window.setTimeout(function () {
-			document.onscroll = onscrollEvents;
-		}, 2000);
-
-		window.setTimeout(function () {title.classList.remove("reveal")}, 1500);
-		
 
 		var svgNS = "http://www.w3.org/2000/svg";
 		var svg = document.getElementById("anim-container");
