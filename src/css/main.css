@@ -45,7 +45,7 @@ html, body {
     display: inline-block;
     opacity: 0;
     transform: translateY(70%);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 0.75s, transform 0.75s;
 }
 
 .content-box .content-title.inview {
@@ -60,4 +60,12 @@ html, body {
 p {
     color: navy;
     font-size: 3em;
+}
+#ResponsiveAnim {
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
 }

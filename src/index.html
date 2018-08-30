@@ -17,6 +17,297 @@
 		 <div id="wrapper">
 			<div class="content-box">
 				<h2 class="content-title">responsive design</h2>
+				<svg id="ResponsiveAnim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18">
+					<defs>
+					  <style>
+						#Shadow {
+						  fill: #414042;
+						  opacity: 0.30;
+						}
+				  
+						#Stand, #Case {
+						  fill: #1b75bc;
+						}
+				  
+						#Background, #Button, #Input {
+						  fill: #fff;
+						}
+				  
+						#Logo, #Nav, #Lower, #Banner {
+						  fill: #d1d3d4;
+						}
+						#Input_3 {
+						  fill: #a7a9ac;
+						}
+					  </style>
+					</defs>
+					<title>Desktop</title>
+					<ellipse id="Shadow" data-name="Shadow" cx="12" cy="17.5" rx="5" ry="0.5"/>
+					<g id="Stand">
+						<polygon id="Leg" points="14.25 17 9.75 17 10.5 15 13.5 15 14.25 17"/>
+						<rect id="Platform" x="8" y="17" width="8" height="0.5"/>
+					</g>
+					<g id="Bevel">
+						<rect id="Case" width="24" height="15" rx="0.5" ry="0.5"/>
+						<circle id="Button" cx="12" cy="14.16" r="0.25"/>
+						<rect id="Background" x="0.5" y="0.49" width="23" height="13"/>
+					</g>
+					<g id="Screen">
+						<rect id="Banner" x="0.5" y="3.5" width="23" height="6"/>
+						<circle id="Logo" cx="4.44" cy="2.4" r="0.5"/>
+						<g id="Nav">
+							<rect id="Nav_1" x="8.75" y="2" width="2" height="0.75"/>
+							<rect id="Nav_2" x="11.33" y="2" width="2.5" height="0.75"/>
+							<rect id="Nav_3" x="14.42" y="2" width="2" height="0.75"/>
+							<rect id="Nav_4" x="17" y="2" width="3" height="0.75"/>
+						</g>
+						<g id="Input">
+								<rect id="Input_1" x="10" y="4.85" width="4" height="0.5"/>
+								<rect id="Input_2" x="9" y="5.84" width="6" height="0.5"/>
+								<rect id="Input_3" x="10.5" y="7.33" width="3" height="0.5"/>		
+						</g>
+						<g id="Lower">
+							<rect id="Lower_R1" x="4" y="10" width="3.5" height="3.5"/>
+							<rect id="Lower_R3" x="12.33" y="10" width="3.5" height="3.5"/>
+							<rect id="Lower_R2" x="8.17" y="10" width="3.5" height="3.5"/>
+							<rect id="Lower_R4" x="16.5" y="10" width="3.5" height="3.5"/>
+						</g>
+					</g>
+
+					<animateTransform 
+						xlink:href="#Stand"
+						attributeName="transform"
+						type="translate"
+						from="0 0"
+						to="0 -10"
+						begin="3s"
+						dur="0.3s"
+						fill="freeze"
+						id="stand-up"
+					/>
+					<animate
+						xlink:href="#Banner"
+						attributeType="XML"
+						attributeName="width"
+						from="23"
+						to="15"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="banner-tablet-shrink-x"
+					/>
+					<animate
+						xlink:href="#Banner"
+						attributeType="XML"
+						attributeName="height"
+						from="6"
+						to="5"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="banner-tablet-shrink-y"
+					/>
+					<animate
+						xlink:href="#Banner"
+						attributeType="XML"
+						attributeName="x"
+						from="0.5"
+						to="4.5"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="banner-tablet-move"
+					/>
+					<animate
+						xlink:href="#Logo"
+						attributeType="XML"
+						attributeName="cx"
+						from="4.44"
+						to="5.5"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="logo-tablet-move"
+					/>
+					<animate
+						xlink:href="#Background"
+						attributeType="XML"
+						attributeName="width"
+						from="23"
+						to="15"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="background-tablet-shrink-x"
+					/>
+					<animate
+						xlink:href="#Background"
+						attributeType="XML"
+						attributeName="height"
+						from="13"
+						to="10"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="background-tablet-shrink-y"
+					/>
+					<animate
+						xlink:href="#Background"
+						attributeType="XML"
+						attributeName="x"
+						from="0.5"
+						to="4.5"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="background-tablet-move"
+					/>
+					<animate
+						xlink:href="#Case"
+						attributeType="XML"
+						attributeName="width"
+						from="24"
+						to="16"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="case-tablet-shrink-x"
+					/>
+					<animate
+						xlink:href="#Case"
+						attributeType="XML"
+						attributeName="height"
+						from="15"
+						to="11"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="case-tablet-shrink-y"
+					/>
+					<animate
+						xlink:href="#Case"
+						attributeType="XML"
+						attributeName="x"
+						from="0"
+						to="4"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="case-tablet-move"
+					/>
+					<animateTransform
+						xlink:href="#Bevel"
+						attributeName="transform"
+						type="translate"
+						from="0 0"
+						to="0 0.5"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="bevel-tablet-move"
+					/>
+					<animate
+						xlink:href="#Stand"
+						attributeType="CSS"
+						attributeName="opacity"
+						from="1"
+						to="0"
+						dur="0.01s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="hide-stand"
+					/>
+					<animate
+						xlink:href="#Lower_R4"
+						attributeType="CSS"
+						attributeName="opacity"
+						from="1"
+						to="0"
+						dur="0.1s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="hide-lower4"
+					/>
+					<animateTransform
+						xlink:href="#Lower"
+						attributeName="transform"
+						type="translate"
+						from="0 0"
+						to="2 -1"
+						begin="stand-up.begin + 0.2s"
+						dur="0.5s"
+						fill="freeze"
+						id="lower-tablet-move"
+					/>
+					<animate
+						xlink:href="#Lower_R1"
+						attributeType="XML"
+						attributeName="height"
+						from="3.5"
+						to="2"
+						dur="0.5s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="lower1-tablet-shrink-y"
+					/>
+					<animate
+						xlink:href="#Lower_R2"
+						attributeType="XML"
+						attributeName="height"
+						from="3.5"
+						to="2"
+						dur="0.5s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="lower2-tablet-shrink-y"
+					/>
+					<animate
+						xlink:href="#Lower_R3"
+						attributeType="XML"
+						attributeName="height"
+						from="3.5"
+						to="2"
+						dur="0.5s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="lower3-tablet-shrink-y"
+					/>
+					<animate
+						xlink:href="#Shadow"
+						attributeType="CSS"
+						attributeName="opacity"
+						from="0.3"
+						to="0.05"
+						dur="0.5s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="tablet-shadow-opacity"
+					/>
+					<animate
+						xlink:href="#Button"
+						attributeType="CSS"
+						attributeName="opacity"
+						from="1"
+						to="0"
+						dur="0.05s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="hide-button"
+					/>
+					<animateTransform
+						xlink:href="#Nav"
+						attributeName="transform"
+						type="translate"
+						from="0 0"
+						to="-1 0"
+						dur="0.5s"
+						begin="stand-up.begin + 0.2s"
+						fill="freeze"
+						id="nav-tablet-move"
+					/>
+				  </svg>
+				  
+				  
 			</div>
 			<div class="content-box odd">
 				<h2 class="content-title">secure websites</h2>
