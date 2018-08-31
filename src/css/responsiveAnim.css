@@ -91,12 +91,12 @@ fill: #a7a9ac;
         opacity: 0.3;
     }
     20% {
-        transform: scaleX(1.2);
+        transform: scaleX(1.4);
         transform-origin: center;
         opacity: 0.1;
     }
     45% {
-        transform: scaleX(1.2);
+        transform: scaleX(1.4);
         transform-origin: center;
         opacity: 0.1;
     }

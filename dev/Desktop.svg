@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #414042;
+        opacity: 0.49;
+      }
+
+      .cls-2 {
+        fill: #1b75bc;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #d1d3d4;
+      }
+    </style>
+  </defs>
+  <title>Desktop</title>
+  <g id="Shadow">
+    <ellipse id="Shadow-2" data-name="Shadow" class="cls-1" cx="12" cy="17.5" rx="5" ry="0.5"/>
+  </g>
+  <g id="Stand">
+    <polygon id="Leg" class="cls-2" points="14.25 17 9.75 17 10.5 15 13.5 15 14.25 17"/>
+    <rect id="Platform" class="cls-2" x="8" y="17" width="8" height="0.5"/>
+  </g>
+  <g id="Bevel">
+    <rect id="Case" class="cls-2" width="24" height="15" rx="0.5" ry="0.5"/>
+    <circle id="Button" class="cls-3" cx="12" cy="14.16" r="0.25"/>
+  </g>
+  <g id="Screen">
+    <g>
+      <rect id="Background" class="cls-4" x="0.5" y="0.49" width="23" height="13"/>
+      <rect id="Lower_R1" data-name="Lower R1" class="cls-4" x="4" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Lower_R3" data-name="Lower R3" class="cls-4" x="12.33" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Lower_R2" data-name="Lower R2" class="cls-4" x="8.17" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Lower_R4" data-name="Lower R4" class="cls-4" x="16.5" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Banner" class="cls-4" x="0.5" y="3.44" width="23" height="6"/>
+      <circle id="Logo" class="cls-4" cx="4.44" cy="2.4" r="0.5"/>
+      <rect id="Nav_4" data-name="Nav 4" class="cls-4" x="17" y="2.02" width="3" height="0.75"/>
+      <rect id="Nav_3" data-name="Nav 3" class="cls-4" x="14.42" y="2.02" width="2" height="0.75"/>
+      <rect id="Nav_2" data-name="Nav 2" class="cls-4" x="11.33" y="2.02" width="2.5" height="0.75"/>
+      <rect id="Nav_1" data-name="Nav 1" class="cls-4" x="8.75" y="2.02" width="2" height="0.75"/>
+    </g>
+    <g>
+      <rect id="Background-2" data-name="Background" class="cls-3" x="0.5" y="0.49" width="23" height="13"/>
+      <rect id="Lower_R1-2" data-name="Lower R1" class="cls-4" x="4" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Lower_R3-2" data-name="Lower R3" class="cls-4" x="12.33" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Lower_R2-2" data-name="Lower R2" class="cls-4" x="8.17" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Lower_R4-2" data-name="Lower R4" class="cls-4" x="16.5" y="9.99" width="3.5" height="3.5"/>
+      <rect id="Banner-2" data-name="Banner" class="cls-4" x="0.5" y="3.44" width="23" height="6"/>
+      <circle id="Logo-2" data-name="Logo" class="cls-4" cx="4.44" cy="2.4" r="0.5"/>
+      <rect id="Nav_4-2" data-name="Nav 4" class="cls-4" x="17" y="2.02" width="3" height="0.75"/>
+      <rect id="Nav_3-2" data-name="Nav 3" class="cls-4" x="14.42" y="2.02" width="2" height="0.75"/>
+      <rect id="Nav_2-2" data-name="Nav 2" class="cls-4" x="11.33" y="2.02" width="2.5" height="0.75"/>
+      <rect id="Nav_1-2" data-name="Nav 1" class="cls-4" x="8.75" y="2.02" width="2" height="0.75"/>
+    </g>
+  </g>
+</svg>
