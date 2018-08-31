@@ -1,0 +1,331 @@
+#Shadow {
+fill: #414042;
+opacity: 0.30;
+}
+
+#Stand, #Case {
+fill: #1b75bc;
+}
+
+#Background, #Button, #Input {
+fill: #fff;
+}
+
+#Logo, #Nav, #Lower, #Banner {
+fill: #d1d3d4;
+}
+#Input_3 {
+fill: #a7a9ac;
+}
+
+#Stand {
+    animation-name: standMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Shadow {
+    animation-name: shadowChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Case{
+    animation-name: caseSizeChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Background, #Banner {
+    animation-name: screenSizeChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Logo {
+    animation-name: logoMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Button {
+    animation-name: buttonChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Nav {
+    animation-name: navChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Nav_1, #Nav_2, #Nav_3 {
+    animation-name: navHide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Lower {
+    animation-name: lowerChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Lower_R2, #Lower_R3 {
+    animation-name: lower23Hide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Lower_R4 {
+    animation-name: lower4Hide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#Input {
+    animation-name: changeInput;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes standMove {
+    10% {transform: translateY(0);}
+    20% {transform: translateY(-10px);}
+    80% {transform: translateY(-10px);}
+    90% {transform: translateY(0);}
+}
+@keyframes shadowChange {
+    10% {
+        transform: scaleX(1.0);
+        opacity: 0.3;
+    }
+    20% {
+        transform: scaleX(1.2);
+        transform-origin: center;
+        opacity: 0.1;
+    }
+    45% {
+        transform: scaleX(1.2);
+        transform-origin: center;
+        opacity: 0.1;
+    }
+    55% {
+        transform: scaleX(0.7);
+        transform-origin: center;
+        opacity: 0.2;
+    }
+    80% {
+        transform: scaleX(0.7);
+        transform-origin: center;
+        opacity: 0.2;
+    }
+    90% {
+        transform: scaleX(1.0);
+        opacity: 0.3;
+    }
+}
+@keyframes caseSizeChange {
+    10% {
+        transform: scale(1, 1);
+    }
+    20% {
+        transform: scale(0.7, 0.8);
+        transform-origin: center;
+    }
+    45% {
+        transform: scale(0.7, 0.8);
+        transform-origin: center;
+    }
+    55% {
+        transform: scale(0.35, 0.9);
+        transform-origin: center;
+    }
+    80% {
+        transform: scale(0.35, 0.9);
+        transform-origin: center;
+    }
+    90% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes screenSizeChange {
+    10% {
+        transform: translateY(0) scale(1, 1);
+    }
+    20% {
+        transform: translateY(0.55px) scale(0.7, 0.88);
+        transform-origin: center;
+    }
+    45% {
+        transform: translateY(0.55px) scale(0.7, 0.88);
+        transform-origin: center;
+    }
+    55% {
+        transform: translateY(0) scale(0.33, 0.9);
+        transform-origin: center;
+    }
+    80% {
+        transform: translateY(0) scale(0.33, 0.9);
+        transform-origin: center;
+    }
+    90% {
+        transform: translateY(0) scale(1, 1);
+    }
+}
+@keyframes logoMove {
+    10% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(1px, 1px);
+        transform-origin: center;
+    }
+    45% {
+        transform: translate(1px, 1px);
+        transform-origin: center;
+    }
+    55% {
+        transform: translate(5px, 0);
+        transform-origin: center;
+    }
+    80% {
+        transform: translate(5px, 0);
+        transform-origin: center;
+    }
+    90% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes buttonChange {
+    10% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    11% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    55% {
+        transform: translateY(-0.5px);
+        transform-origin: center;
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-0.5px);
+        transform-origin: center;
+        opacity: 1;
+    }
+    90% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes navChange {
+    10% {
+        transform: translate(0, 0) scaleX(1);
+    }
+    20% {
+        transform: translate(-1px, 1px) scaleX(1);
+        transform-origin: right;
+    }
+    45% {
+        transform: translate(-1px, 1px) scaleX(1);
+        transform-origin: right;
+    }
+    55% {
+        transform: translate(-8px, 0) scaleX(0.27);
+        transform-origin: right;
+    }
+    80% {
+        transform: translate(-8px, 0) scaleX(0.27);;
+        transform-origin: right;
+    }
+    87% {
+        transform: translate(0, 0) scaleX(1);
+    }
+}
+@keyframes navHide {
+    
+    45% {
+        opacity: 1;
+    }
+    47% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+@keyframes lowerChange {
+    10% {
+        transform: scale(1, 1);
+    }
+    20% {
+        transform: translate(2.4px, 0.9px) scale(1.1, 0.8);
+        transform-origin: center;
+    }
+    45% {
+        transform: translate(2.4px, 0.9px) scale(1.1, 0.8);
+        transform-origin: center;
+    }
+    55% {
+        transform: translate(11.2px, 0.2px) scale(1.8, 0.85);
+        transform-origin: center;
+    }
+    80% {
+        transform: translate(11.2px, 0.2px) scale(1.8, 0.85);
+        transform-origin: center;
+    }
+    90% {
+        transform: translate(0, 0) scale(1, 1);
+    }
+}
+@keyframes lower4Hide {
+    10% {
+        opacity: 1;
+    }
+    12% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+@keyframes lower23Hide {
+    
+    45% {
+        opacity: 1;
+    }
+    47% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+@keyframes changeInput {
+    10% {
+        transform: scale(1, 1);
+    }
+    20% {
+        transform: translateY(1.2px) scale(1.1, 1.1);
+        transform-origin: center;
+    }
+    45% {
+        transform: translateY(1.2px) scale(1.1, 1.1);
+        transform-origin: center;
+    }
+    55% {
+        transform: translateY(0.5px) scale(0.9, 1.1);
+        transform-origin: center;
+    }
+    80% {
+        transform: translateY(0.5px) scale(0.9, 1.1);
+        transform-origin: center;
+    }
+    90% {
+        transform: scale(1, 1);
+    }
+}
