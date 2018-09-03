@@ -60,11 +60,16 @@ p {
     color: navy;
     font-size: 3em;
 }
-#ResponsiveAnim {
-    width: 80%;
+.content-box svg {
     position: absolute;
     display: block;
     margin: auto;
     left: 0;
     right: 0;
+}
+.content-box #ResponsiveAnim {
+    width: 80%;
+}
+.content-box #SecureAnim {
+    width: 60%;
 }

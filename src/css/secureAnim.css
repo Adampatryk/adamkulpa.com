@@ -1,0 +1,52 @@
+#SecureAnim #Background {
+    fill: #44b649;
+    opacity: 0.6;
+
+    animation-name: backgroundChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#SecureAnim #Clip {
+    fill: none;
+    stroke: #bce2f5;
+    stroke-miterlimit: 10;
+    stroke-width: 1.8px;
+    
+    animation-name: clipChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#SecureAnim #Body {
+    fill: rgb(0, 40, 50);
+}
+
+@keyframes clipChange {
+    20% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-2px);
+    }
+    70% {
+        transform: translateY(-2px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+}
+@keyframes backgroundChange {
+    20% {
+        fill: #44b649;
+    }
+    30% {
+        fill: #6e6e6e;
+    }
+    70% {
+        fill: #6e6e6e;
+    }
+    80% {
+        fill: #44b649;
+    }
+}

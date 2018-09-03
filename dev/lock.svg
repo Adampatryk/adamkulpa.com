@@ -1,0 +1,28 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.91 23.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #44b649;
+        opacity: 0.78;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #bce2f5;
+        stroke-miterlimit: 10;
+        stroke-width: 1.8px;
+      }
+
+      .cls-3 {
+        fill: #066;
+      }
+    </style>
+  </defs>
+  <title>lock</title>
+  <path id="Background" class="cls-1" d="M10,1.56,1.87,7.74A3.39,3.39,0,0,0,.69,11.42l3.16,10.2A3.37,3.37,0,0,0,7.07,24h9.86a3.37,3.37,0,0,0,3.22-2.38l3.16-10.2a3.39,3.39,0,0,0-1.18-3.68L14.05,1.56A3.39,3.39,0,0,0,10,1.56Z" transform="translate(-0.54 -0.87)"/>
+  <g id="Clip">
+    <path id="Metal" class="cls-2" d="M16,13.84C16,7.12,13.25,7,11.94,7,10.78,7,8,7,8,13.87" transform="translate(-0.54 -0.87)"/>
+    <polygon id="Leg" class="cls-2" points="15.46 17.13 15.46 17.13 15.46 12.83 15.46 13.57 15.46 17.13"/>
+  </g>
+  <path id="Body" class="cls-3" d="M17.35,21H6.65A.65.65,0,0,1,6,20.35v-7.2A.15.15,0,0,1,6.15,13h11.7a.15.15,0,0,1,.15.15v7.2A.65.65,0,0,1,17.35,21Z" transform="translate(-0.54 -0.87)"/>
+</svg>

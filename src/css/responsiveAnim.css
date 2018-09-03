@@ -1,79 +1,79 @@
-#Shadow {
+#ResponsiveAnim #Shadow {
 fill: #414042;
 opacity: 0.30;
 }
 
-#Stand, #Case {
+#ResponsiveAnim #Stand, #ResponsiveAnim #Case {
 fill: #1b75bc;
 }
 
-#Background, #Button, #Input {
+#ResponsiveAnim #Background, #ResponsiveAnim #Button, #ResponsiveAnim #Input {
 fill: #fff;
 }
 
-#Logo, #Nav, #Lower, #Banner {
+#ResponsiveAnim #Logo, #ResponsiveAnim #Nav, #ResponsiveAnim #Lower, #ResponsiveAnim #Banner {
 fill: #d1d3d4;
 }
-#Input_3 {
+#ResponsiveAnim #Input_3 {
 fill: #a7a9ac;
 }
 
-#Stand {
+#ResponsiveAnim #Stand {
     animation-name: standMove;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Shadow {
+#ResponsiveAnim #Shadow {
     animation-name: shadowChange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Case{
+#ResponsiveAnim #Case{
     animation-name: caseSizeChange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Background, #Banner {
+#ResponsiveAnim #Background, #ResponsiveAnim #Banner {
     animation-name: screenSizeChange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Logo {
+#ResponsiveAnim #Logo {
     animation-name: logoMove;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Button {
+#ResponsiveAnim #Button {
     animation-name: buttonChange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Nav {
+#ResponsiveAnim #Nav {
     animation-name: navChange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Nav_1, #Nav_2, #Nav_3 {
+#ResponsiveAnim #Nav_1, #ResponsiveAnim #Nav_2, #ResponsiveAnim #Nav_3 {
     animation-name: navHide;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Lower {
+#ResponsiveAnim #Lower {
     animation-name: lowerChange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Lower_R2, #Lower_R3 {
+#ResponsiveAnim #Lower_R2, #ResponsiveAnim #Lower_R3 {
     animation-name: lower23Hide;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Lower_R4 {
+#ResponsiveAnim #Lower_R4 {
     animation-name: lower4Hide;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-#Input {
+#ResponsiveAnim #Input {
     animation-name: changeInput;
     animation-duration: 6s;
     animation-iteration-count: infinite;
